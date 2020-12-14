@@ -1061,6 +1061,8 @@ Text GLabel 4950 4175 0    50   Input ~ 0
 V_ext_p
 Text GLabel 5000 3375 0    50   Input ~ 0
 V_ext_p
-Text Notes 1525 1775 0    50   ~ 0
-change symbol so that exposed pad is connected to ground
+Text Label 7800 3800 0    50   ~ 0
+LX
+Text Label 1900 5800 0    50   ~ 0
+V_BAT+_F
 $EndSCHEMATC
