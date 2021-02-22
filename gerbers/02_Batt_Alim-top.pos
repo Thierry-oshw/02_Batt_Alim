@@ -1,0 +1,28 @@
+### Module positions - created on 02/23/21 00:21:16 ###
+### Printed by Pcbnew version kicad (5.1.6)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val          Package                    PosX       PosY       Rot  Side
+C1        10uF         C_0603_1608Metric      120.6400   -68.4900    0.0000  top
+C2        10uF         C_0603_1608Metric      107.3900   -69.2400  270.0000  top
+C3        47uF         C_1210_3225Metric      108.4400   -83.7400  270.0000  top
+C4        47uF         C_1210_3225Metric      108.3400   -77.1400  180.0000  top
+D2        LED          D_0603_1608Metric      124.8750   -65.5400   90.0000  top
+D3        LED          D_0603_1608Metric      123.0300   -65.5400   90.0000  top
+D4        1N5819W      D_SOD-123F             126.9400   -67.3400   90.0000  top
+D5        1N5819W      D_SOD-123F             115.0400   -83.8400  270.0000  top
+D6        LED          D_0603_1608Metric      105.8400   -83.2400   90.0000  top
+D7        1N5819W      D_SOD-123F             108.8900   -65.9900  180.0000  top
+D8        1N5819W      D_SOD-123F             108.4400   -74.2400  180.0000  top
+IC1       TP4056       SOP-8                  114.6400   -70.4900  180.0000  top
+L1        33uH         L_10.4x10.4_H4.8       121.8900   -80.2900   90.0000  top
+R6        1k           R_0603_1608Metric      124.8750   -69.0400  270.0000  top
+R7        10k          R_0603_1608Metric      120.6400   -71.1200    0.0000  top
+R8        1k           R_0603_1608Metric      123.0300   -68.9900  270.0000  top
+R9        2            R_0603_1608Metric      118.6400   -65.4900   90.0000  top
+R10       2            R_0603_1608Metric      116.6400   -65.4900   90.0000  top
+R12       2            R_0603_1608Metric      114.6400   -65.4900   90.0000  top
+R14       2            R_0603_1608Metric      112.6400   -65.4900   90.0000  top
+R15       2k2          R_0603_1608Metric      103.8400   -84.7400  270.0000  top
+U1        ME2108A50M3  SOT-23_Handsoldering   111.9400   -83.3400   90.0000  top
+## End

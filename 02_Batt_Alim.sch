@@ -26,183 +26,8 @@ F 3 "C4190" H 7925 5225 50  0001 C CNN
 $EndComp
 Text GLabel 8525 3500 2    50   Input ~ 0
 5V
-Text GLabel 9500 5650 0    50   Input ~ 0
-V_BAT+
-$Comp
-L Device:R R?
-U 1 1 5FD40E9B
-P 4800 2425
-AR Path="/5FD39726/5FD40E9B" Ref="R?"  Part="1" 
-AR Path="/5FD40E9B" Ref="R3"  Part="1" 
-F 0 "R3" H 4870 2471 50  0000 L CNN
-F 1 "100K" H 4870 2380 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 2425 50  0001 C CNN
-F 3 "C25803" H 4800 2425 50  0001 C CNN
-	1    4800 2425
-	1    0    0    -1  
-$EndComp
-Text Notes 9475 2325 0    50   ~ 0
-nmos
-$Comp
-L Device:R R?
-U 1 1 5FD40EA8
-P 5225 2425
-AR Path="/5FD39726/5FD40EA8" Ref="R?"  Part="1" 
-AR Path="/5FD40EA8" Ref="R4"  Part="1" 
-F 0 "R4" V 5018 2425 50  0000 C CNN
-F 1 "100" V 5109 2425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5155 2425 50  0001 C CNN
-F 3 "C22775" H 5225 2425 50  0001 C CNN
-	1    5225 2425
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FD40EAE
-P 9300 2175
-AR Path="/5FD39726/5FD40EAE" Ref="R?"  Part="1" 
-AR Path="/5FD40EAE" Ref="R2"  Part="1" 
-F 0 "R2" V 9093 2175 50  0000 C CNN
-F 1 "100" V 9184 2175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 2175 50  0001 C CNN
-F 3 "C22775" H 9300 2175 50  0001 C CNN
-	1    9300 2175
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FD40EB4
-P 9025 2375
-AR Path="/5FD39726/5FD40EB4" Ref="R?"  Part="1" 
-AR Path="/5FD40EB4" Ref="R5"  Part="1" 
-F 0 "R5" V 8818 2375 50  0000 C CNN
-F 1 "100K" V 8909 2375 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8955 2375 50  0001 C CNN
-F 3 "C25803" H 9025 2375 50  0001 C CNN
-	1    9025 2375
-	1    0    0    -1  
-$EndComp
-Text GLabel 6750 2575 2    50   Input ~ 0
-uC_2_V
-Text Notes 7125 2725 0    50   ~ 0
-uC_2_V :\n1: maintien\n0: arrêt
-$Comp
-L Device:R R?
-U 1 1 5FD40ECD
-P 9800 1675
-AR Path="/5FD39726/5FD40ECD" Ref="R?"  Part="1" 
-AR Path="/5FD40ECD" Ref="R1"  Part="1" 
-F 0 "R1" V 9593 1675 50  0000 C CNN
-F 1 "100K" V 9684 1675 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9730 1675 50  0001 C CNN
-F 3 "C25803" H 9800 1675 50  0001 C CNN
-	1    9800 1675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 2375 9800 2500
-Text GLabel 5700 1525 2    50   Input ~ 0
-V_OUT
-Text Notes 5750 1775 0    50   ~ 0
-tension \navant DC/DC
-Text GLabel 5050 1525 0    50   Input ~ 0
-SWITCH_OUT
-Text GLabel 5050 2000 0    50   Input ~ 0
-SWITCH_IN
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 5FD40F11
-P 9700 2175
-AR Path="/5FD39726/5FD40F11" Ref="Q?"  Part="1" 
-AR Path="/5FD40F11" Ref="Q2"  Part="1" 
-F 0 "Q2" H 9904 2221 50  0000 L CNN
-F 1 "2N7002" H 9904 2130 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9900 2100 50  0001 L CIN
-F 3 "C8545" H 9700 2175 50  0001 L CNN
-	1    9700 2175
-	1    0    0    -1  
-$EndComp
-Text Notes 5475 2250 0    50   ~ 0
-pmos:\nPackage_SO:SOIC-8_3.9x4.9mm_P1.27mm\nC16072\n
-Text Notes 10425 6275 0    50   ~ 0
-Power On/Off\n switch
-Text GLabel 9025 2600 0    50   Input ~ 0
-GND
-Text GLabel 9800 2500 0    50   Input ~ 0
-GND
-Text GLabel 9500 6275 0    50   Input ~ 0
-SWITCH_IN
-Text GLabel 9500 6100 0    50   Input ~ 0
-SWITCH_OUT
-Wire Wire Line
-	9025 2175 9025 2225
-Wire Wire Line
-	9025 2600 9025 2525
-Text GLabel 8975 2175 0    50   Input ~ 0
-SWITCH_OUT
-Text GLabel 9800 1450 0    50   Input ~ 0
-V_uC
-Wire Wire Line
-	9800 1450 9800 1525
-Wire Wire Line
-	9800 1825 9800 1900
-Wire Wire Line
-	9450 2175 9500 2175
-Wire Wire Line
-	9025 2175 9150 2175
-Wire Wire Line
-	8975 2175 9025 2175
-Connection ~ 9025 2175
-Text GLabel 9875 1900 2    50   Input ~ 0
-V_2_uC
-Wire Wire Line
-	9875 1900 9800 1900
-Connection ~ 9800 1900
-Wire Wire Line
-	9800 1900 9800 1975
-Wire Wire Line
-	5050 2000 5075 2000
-Wire Wire Line
-	5525 2000 5625 2000
-Wire Wire Line
-	5625 2000 5625 1525
-Wire Wire Line
-	5625 1525 5525 1525
-Wire Wire Line
-	5700 1525 5625 1525
-Connection ~ 5625 1525
-Wire Wire Line
-	5225 2625 5225 2575
-Wire Wire Line
-	5225 2275 5225 2200
-Wire Wire Line
-	5225 2625 4800 2625
-Wire Wire Line
-	4800 2625 4800 2575
-Connection ~ 5225 2625
-Wire Wire Line
-	4800 2275 4800 2150
-Wire Wire Line
-	4800 2150 5075 2150
-Wire Wire Line
-	5075 2150 5075 2000
-Connection ~ 5075 2000
-Wire Wire Line
-	5075 2000 5125 2000
-Text GLabel 9500 4900 0    50   Input ~ 0
-V_uC
-Text GLabel 9500 5075 0    50   Input ~ 0
-V_2_uC
 Text GLabel 9500 4325 0    50   Input ~ 0
 GND
-Text GLabel 9500 5250 0    50   Input ~ 0
-uC_2_V
-Text Notes 9950 1800 0    50   ~ 0
-V_2_uC\nétat de l'interrupteur:\n0 : passant ON\n1 : ouvert OFF\n
-Text GLabel 7075 3500 0    50   Input ~ 0
-V_OUT
-Wire Wire Line
-	9500 5650 9600 5650
 $Comp
 L Chimere:TP4056 IC1
 U 1 1 5FD80F7F
@@ -352,7 +177,7 @@ Text GLabel 3450 2325 2    50   Input ~ 0
 V_BAT+
 Wire Wire Line
 	3350 2325 3400 2325
-Text Notes 10375 5850 0    50   ~ 0
+Text Notes 4350 2175 0    50   ~ 0
 Battery is Olimex \nBATTERY-LIPO250mAh\n
 $Comp
 L Device:R R7
@@ -403,23 +228,8 @@ Wire Wire Line
 	8075 5225 8175 5225
 Text GLabel 5000 3775 0    50   Input ~ 0
 V_BAT+
-$Comp
-L Chimere:AO4407A Q1
-U 1 1 5FD642BD
-P 5325 2100
-F 0 "Q1" V 5670 2100 50  0000 C CNN
-F 1 "AO4407A" V 5579 2100 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5325 2100 50  0001 L BNN
-F 3 "C16072 " H 5325 2100 50  0001 L BNN
-F 4 "" H 5325 2100 50  0001 L BNN "MANUFACTURER"
-F 5 "" H 5325 2100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 6 "" H 5325 2100 50  0001 L BNN "PARTREV"
-F 7 "" H 5325 2100 50  0001 L BNN "STANDARD"
-	1    5325 2100
-	0    -1   -1   0   
-$EndComp
 Text GLabel 5725 3375 2    50   Input ~ 0
-SWITCH_IN
+V_sum
 Text GLabel 9500 4525 0    50   Input ~ 0
 5V
 $Comp
@@ -609,91 +419,16 @@ F 3 "~" H 9800 4525 50  0001 C CNN
 	1    9800 4525
 	1    0    0    -1  
 $EndComp
-Text GLabel 9500 4700 0    50   Input ~ 0
-GND
-$Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 5FDA5A16
-P 9800 4700
-F 0 "J4" H 9880 4742 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 4651 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4700 50  0001 C CNN
-F 3 "~" H 9800 4700 50  0001 C CNN
-	1    9800 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 4525 9600 4525
-Wire Wire Line
-	9500 4700 9600 4700
-Text Notes 10525 4300 0    50   ~ 0
+Text Notes 10525 4175 0    50   ~ 0
 INPUT
-Text Notes 10500 4625 0    50   ~ 0
+Text Notes 10500 4575 0    50   ~ 0
 OUTPUT
-Text Notes 10450 5000 0    50   ~ 0
-CONTROL
-Text GLabel 9500 5425 0    50   Input ~ 0
-GND
-$Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 5FDAFD3C
-P 9800 4900
-F 0 "J5" H 9880 4942 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 4851 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4900 50  0001 C CNN
-F 3 "~" H 9800 4900 50  0001 C CNN
-	1    9800 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J6
-U 1 1 5FDB014C
-P 9800 5075
-F 0 "J6" H 9880 5117 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 5026 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5075 50  0001 C CNN
-F 3 "~" H 9800 5075 50  0001 C CNN
-	1    9800 5075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J7
-U 1 1 5FDB04EF
-P 9800 5250
-F 0 "J7" H 9880 5292 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 5201 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5250 50  0001 C CNN
-F 3 "~" H 9800 5250 50  0001 C CNN
-	1    9800 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J8
-U 1 1 5FDB0861
-P 9800 5425
-F 0 "J8" H 9880 5467 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 5376 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5425 50  0001 C CNN
-F 3 "~" H 9800 5425 50  0001 C CNN
-	1    9800 5425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 4900 9600 4900
-Wire Wire Line
-	9500 5075 9600 5075
-Wire Wire Line
-	9500 5250 9600 5250
-Wire Wire Line
-	9500 5425 9600 5425
-Wire Notes Line
-	9100 4800 10825 4800
 Wire Notes Line
 	9075 4425 10825 4425
 Wire Notes Line
 	10825 4050 9075 4050
-Wire Notes Line
-	10825 4050 10825 5575
 Wire Notes Line
 	6700 3050 6700 5425
 Wire Notes Line
@@ -724,74 +459,6 @@ Wire Notes Line
 	3975 1425 800  1425
 Text Notes 2175 1575 0    50   ~ 0
 charger
-Wire Notes Line
-	4450 1175 4450 2875
-Text Notes 7300 1525 0    50   ~ 0
-Graceful switch
-$Comp
-L Connector_Generic:Conn_01x01 J9
-U 1 1 5FE2AEFB
-P 9800 5650
-F 0 "J9" H 9880 5692 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 5601 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5650 50  0001 C CNN
-F 3 "~" H 9800 5650 50  0001 C CNN
-	1    9800 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J10
-U 1 1 5FE2B296
-P 9800 5825
-F 0 "J10" H 9880 5867 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 5776 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5825 50  0001 C CNN
-F 3 "~" H 9800 5825 50  0001 C CNN
-	1    9800 5825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 5825 9600 5825
-$Comp
-L Connector_Generic:Conn_01x01 J11
-U 1 1 5FE35B44
-P 9800 6100
-F 0 "J11" H 9880 6142 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 6051 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 6100 50  0001 C CNN
-F 3 "~" H 9800 6100 50  0001 C CNN
-	1    9800 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J12
-U 1 1 5FE36031
-P 9800 6275
-F 0 "J12" H 9880 6317 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 6226 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 6275 50  0001 C CNN
-F 3 "~" H 9800 6275 50  0001 C CNN
-	1    9800 6275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 6100 9600 6100
-Wire Wire Line
-	9500 6275 9600 6275
-Wire Notes Line
-	11250 5950 11250 5575
-Wire Notes Line
-	9075 5575 11250 5575
-Wire Notes Line
-	9075 4050 9075 5950
-Wire Notes Line
-	8900 5950 8900 6400
-Wire Notes Line
-	8900 6400 11000 6400
-Wire Notes Line
-	11000 6400 11000 5950
-Wire Notes Line
-	8900 5950 11250 5950
 Wire Wire Line
 	1800 3550 2300 3550
 Text GLabel 5000 3375 0    50   Input ~ 0
@@ -836,19 +503,6 @@ $EndComp
 Wire Wire Line
 	2300 3550 2300 3900
 $Comp
-L Device:D_ALT D1
-U 1 1 5FDCC581
-P 5375 1525
-F 0 "D1" H 5375 1308 50  0000 C CNN
-F 1 "1N5819W" H 5375 1399 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 5375 1525 50  0001 C CNN
-F 3 "C369930" H 5375 1525 50  0001 C CNN
-	1    5375 1525
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5050 1525 5225 1525
-$Comp
 L Device:D_ALT D5
 U 1 1 5FDD39F1
 P 8175 3500
@@ -874,79 +528,49 @@ Wire Wire Line
 	5675 3375 5725 3375
 Wire Wire Line
 	5000 3775 5225 3775
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 6021A4D0
-P 6050 2575
-AR Path="/5FD39726/6021A4D0" Ref="Q?"  Part="1" 
-AR Path="/6021A4D0" Ref="Q3"  Part="1" 
-F 0 "Q3" H 6254 2621 50  0000 L CNN
-F 1 "2N7002" H 6254 2530 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 2500 50  0001 L CIN
-F 3 "C8545" H 6050 2575 50  0001 L CNN
-	1    6050 2575
-	-1   0    0    -1  
-$EndComp
-Text GLabel 5875 2775 0    50   Input ~ 0
-GND
-Wire Wire Line
-	5875 2775 5950 2775
-Wire Wire Line
-	5550 2625 5550 2350
-Wire Wire Line
-	5550 2350 5950 2350
-Wire Wire Line
-	5950 2350 5950 2375
-Wire Wire Line
-	5225 2625 5550 2625
-$Comp
-L Device:R R?
-U 1 1 6023392B
-P 6475 2575
-AR Path="/5FD39726/6023392B" Ref="R?"  Part="1" 
-AR Path="/6023392B" Ref="R13"  Part="1" 
-F 0 "R13" V 6268 2575 50  0000 C CNN
-F 1 "100" V 6359 2575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6405 2575 50  0001 C CNN
-F 3 "C22775" H 6475 2575 50  0001 C CNN
-	1    6475 2575
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6250 2575 6325 2575
-$Comp
-L Device:R R?
-U 1 1 602393C8
-P 7375 2225
-AR Path="/5FD39726/602393C8" Ref="R?"  Part="1" 
-AR Path="/602393C8" Ref="R11"  Part="1" 
-F 0 "R11" V 7168 2225 50  0000 C CNN
-F 1 "100K" V 7259 2225 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7305 2225 50  0001 C CNN
-F 3 "C25803" H 7375 2225 50  0001 C CNN
-	1    7375 2225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6625 2575 6750 2575
-Text GLabel 7450 2075 2    50   Input ~ 0
-uC_2_V
-Text GLabel 7450 2375 2    50   Input ~ 0
-GND
-Wire Wire Line
-	7450 2075 7375 2075
-Wire Wire Line
-	7450 2375 7375 2375
-Text GLabel 9500 5825 0    50   Input ~ 0
-GND
-Wire Notes Line
-	4450 1175 11050 1175
-Wire Notes Line
-	11050 1175 11050 2875
-Wire Notes Line
-	4450 2875 11050 2875
 Text Notes 3175 3350 0    50   ~ 0
 charge à 130mA
 Text Label 1875 3550 0    50   ~ 0
 V_ext_p
+Text GLabel 7075 3500 0    50   Input ~ 0
+V_sum
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5FE2AEFB
+P 9800 4900
+F 0 "J9" H 9880 4942 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 4851 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 4900 50  0001 C CNN
+F 3 "~" H 9800 4900 50  0001 C CNN
+	1    9800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4900 9600 4900
+Text GLabel 9500 4900 0    50   Input ~ 0
+V_BAT+
+Text Notes 10575 4950 0    50   ~ 0
+Battery
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 60345282
+P 1525 6175
+F 0 "#LOGO1" H 1525 6450 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1525 5950 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo2_5mm_SilkScreen" H 1525 6175 50  0001 C CNN
+F 3 "~" H 1525 6175 50  0001 C CNN
+	1    1525 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO2
+U 1 1 60346118
+P 1525 6850
+F 0 "#LOGO2" H 1525 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1525 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 1525 6850 50  0001 C CNN
+F 3 "~" H 1525 6850 50  0001 C CNN
+	1    1525 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
