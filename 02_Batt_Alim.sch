@@ -230,7 +230,7 @@ Text GLabel 5000 3775 0    50   Input ~ 0
 V_BAT+
 Text GLabel 5725 3375 2    50   Input ~ 0
 V_sum
-Text GLabel 9500 4525 0    50   Input ~ 0
+Text GLabel 9500 5450 0    50   Input ~ 0
 5V
 $Comp
 L Device:C C4
@@ -411,19 +411,19 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5FDA56A3
-P 9800 4525
-F 0 "J3" H 9880 4567 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 4476 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4525 50  0001 C CNN
-F 3 "~" H 9800 4525 50  0001 C CNN
-	1    9800 4525
+P 9800 5450
+F 0 "J3" H 9880 5492 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 5401 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 5450 50  0001 C CNN
+F 3 "~" H 9800 5450 50  0001 C CNN
+	1    9800 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 4525 9600 4525
-Text Notes 10525 4175 0    50   ~ 0
-INPUT
-Text Notes 10500 4575 0    50   ~ 0
+	9500 5450 9600 5450
+Text Notes 10525 4300 0    50   ~ 0
+INPUT\nCHARGER
+Text Notes 10500 5300 0    50   ~ 0
 OUTPUT
 Wire Notes Line
 	9075 4425 10825 4425
@@ -532,25 +532,23 @@ Text Notes 3175 3350 0    50   ~ 0
 charge à 130mA
 Text Label 1875 3550 0    50   ~ 0
 V_ext_p
-Text GLabel 7075 3500 0    50   Input ~ 0
-V_sum
 $Comp
 L Connector_Generic:Conn_01x01 J9
 U 1 1 5FE2AEFB
-P 9800 4900
-F 0 "J9" H 9880 4942 50  0000 L CNN
-F 1 "Conn_01x01" H 9880 4851 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4900 50  0001 C CNN
-F 3 "~" H 9800 4900 50  0001 C CNN
-	1    9800 4900
+P 9800 4525
+F 0 "J9" H 9880 4567 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 4476 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 4525 50  0001 C CNN
+F 3 "~" H 9800 4525 50  0001 C CNN
+	1    9800 4525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 4900 9600 4900
-Text GLabel 9500 4900 0    50   Input ~ 0
+	9500 4525 9600 4525
+Text GLabel 9500 4525 0    50   Input ~ 0
 V_BAT+
-Text Notes 10575 4950 0    50   ~ 0
-Battery
+Text Notes 10575 4575 0    50   ~ 0
+to Battery
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 60345282
@@ -573,4 +571,55 @@ F 3 "~" H 1525 6850 50  0001 C CNN
 	1    1525 6850
 	1    0    0    -1  
 $EndComp
+Text GLabel 9500 5275 0    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 60A7F15C
+P 9800 5275
+F 0 "J6" H 9880 5317 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 5226 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 5275 50  0001 C CNN
+F 3 "~" H 9800 5275 50  0001 C CNN
+	1    9800 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5275 9600 5275
+Wire Notes Line
+	9075 4975 10825 4975
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 60A8BE36
+P 9800 5075
+F 0 "J5" H 9880 5117 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 5026 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 5075 50  0001 C CNN
+F 3 "~" H 9800 5075 50  0001 C CNN
+	1    9800 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5075 9600 5075
+Text GLabel 9500 5075 0    50   Input ~ 0
+DCDC_IN
+Text Notes 10575 4825 0    50   ~ 0
+Vsum
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 60A9782F
+P 9800 4775
+F 0 "J4" H 9880 4817 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 4726 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 9800 4775 50  0001 C CNN
+F 3 "~" H 9800 4775 50  0001 C CNN
+	1    9800 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4775 9600 4775
+Text GLabel 9500 4775 0    50   Input ~ 0
+V_sum
+Text GLabel 7075 3500 0    50   Input ~ 0
+DCDC_IN
 $EndSCHEMATC
