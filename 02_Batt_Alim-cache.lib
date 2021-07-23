@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Chimere_ME2108A50M3
+# Chimere_comps_ME2108A50M3
 #
-DEF Chimere_ME2108A50M3 U 0 40 Y Y 1 F N
+DEF Chimere_comps_ME2108A50M3 U 0 40 Y Y 1 F N
 F0 "U" 125 -225 50 H V C CNN
-F1 "Chimere_ME2108A50M3" 50 200 50 H V C CNN
+F1 "Chimere_comps_ME2108A50M3" 50 200 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,12 +16,12 @@ X VOUT 3 325 75 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Chimere_TP4056
+# Chimere_comps_TP4056
 #
-DEF Chimere_TP4056 IC 0 40 Y Y 1 F N
+DEF Chimere_comps_TP4056 IC 0 40 Y Y 1 F N
 F0 "IC" -400 500 50 H V L BNN
-F1 "Chimere_TP4056" 100 -501 50 H V L BNN
-F2 "Chimere:SOP-8" 0 0 50 H I L BNN
+F1 "Chimere_comps_TP4056" 100 -501 50 H V L BNN
+F2 "Chimere_comps:SOP-8" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 DRAW
 S -400 -400 400 400 0 0 10 f
