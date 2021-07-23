@@ -377,7 +377,7 @@ U 1 1 5FD9BF62
 P 9800 4150
 F 0 "J1" H 9880 4192 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 4101 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4150 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 4150 50  0001 C CNN
 F 3 "~" H 9800 4150 50  0001 C CNN
 	1    9800 4150
 	1    0    0    -1  
@@ -390,7 +390,7 @@ U 1 1 5FDA107A
 P 9800 4325
 F 0 "J2" H 9880 4367 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 4276 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4325 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 4325 50  0001 C CNN
 F 3 "~" H 9800 4325 50  0001 C CNN
 	1    9800 4325
 	1    0    0    -1  
@@ -403,7 +403,7 @@ U 1 1 5FDA56A3
 P 9800 5450
 F 0 "J3" H 9880 5492 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 5401 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5450 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 5450 50  0001 C CNN
 F 3 "~" H 9800 5450 50  0001 C CNN
 	1    9800 5450
 	1    0    0    -1  
@@ -527,7 +527,7 @@ U 1 1 5FE2AEFB
 P 9800 4525
 F 0 "J9" H 9880 4567 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 4476 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4525 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 4525 50  0001 C CNN
 F 3 "~" H 9800 4525 50  0001 C CNN
 	1    9800 4525
 	1    0    0    -1  
@@ -568,7 +568,7 @@ U 1 1 60A7F15C
 P 9800 5275
 F 0 "J6" H 9880 5317 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 5226 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5275 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 5275 50  0001 C CNN
 F 3 "~" H 9800 5275 50  0001 C CNN
 	1    9800 5275
 	1    0    0    -1  
@@ -583,7 +583,7 @@ U 1 1 60A8BE36
 P 9800 5075
 F 0 "J5" H 9880 5117 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 5026 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 5075 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 5075 50  0001 C CNN
 F 3 "~" H 9800 5075 50  0001 C CNN
 	1    9800 5075
 	1    0    0    -1  
@@ -600,7 +600,7 @@ U 1 1 60A9782F
 P 9800 4775
 F 0 "J4" H 9880 4817 50  0000 L CNN
 F 1 "Conn_01x01" H 9880 4726 50  0000 L CNN
-F 2 "Chimere:Castellated_conn" H 9800 4775 50  0001 C CNN
+F 2 "Chimere_mods:Castellated_conn" H 9800 4775 50  0001 C CNN
 F 3 "~" H 9800 4775 50  0001 C CNN
 	1    9800 4775
 	1    0    0    -1  
@@ -974,7 +974,7 @@ U 1 1 60B1A12F
 P 7550 3500
 F 0 "L1" V 7369 3500 50  0000 C CNN
 F 1 "MWSA0603S-330MT" V 7650 3500 50  0000 C CNN
-F 2 "Chimere:L_Sunlord_MWSA0603S_6.6x7.0x2.8mm" H 7550 3500 50  0001 C CNN
+F 2 "Chimere_comps:L_Sunlord_MWSA0603S_6.6x7.0x2.8mm" H 7550 3500 50  0001 C CNN
 F 3 "C408454" H 7550 3500 50  0001 C CNN
 	1    7550 3500
 	0    1    1    0   
