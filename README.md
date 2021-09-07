@@ -23,7 +23,7 @@ Ci-joint le schéma de la version de 2021_06_04 // Here schematic of version 202
 Le module fonctionne de la façon suivante:
 Il faut l'alimenter avec une tension 5V +-5% (typiquement celle de l'USB classique) sur la pin Vext. (Ne pas oublier GND bien sûr).
 
-Il faut brancher la batterie Lipo sur V_bat+ et GND.
+Il faut brancher la batterie Lipo sur V_bat+ et GND. La batterie Lipo doit être constituée d'une seule cellule, qui doit être chargée à 4.2V, présente une tension de 3.7V typique, et dont la tension de mise en protection est de 3V. La résistance R7 de 10kOhms permet de régler la puce TP4056 sur un courant de charge de 130mA. La batterie Lipo doit donc avoir une capacité d'au moins 2*130mAh, soit 260mAh au minimum. Plus d'information sur www.tp4056.com.
 
 La sortie V_sum est à relier à DCDC_IN (ceci permet d'insérer un interrupteur à cet endroit).
 
